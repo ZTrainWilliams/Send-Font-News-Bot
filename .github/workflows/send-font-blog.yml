@@ -2,8 +2,8 @@ name: 'Send Font News Bot'
 on:
   push:
   schedule:
-    # 定时任务，在每天的9点
-    - cron: "0 8 13 * *"
+    # 定时任务，在每天的9点(与整点11分钟差距)
+    - cron: "0 24 49 * *"
 
 env:
   FONT_WECOM_WEBHOOK_KEY: ${{ secrets.FONT_WECOM_WEBHOOK_KEY }}
