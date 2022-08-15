@@ -25,6 +25,7 @@ const sortDate = (arr) => {
 
 const adsKeyWords = [
   "招聘",
+  "加薪",
   "月薪",
   "年薪",
   "跳槽",
