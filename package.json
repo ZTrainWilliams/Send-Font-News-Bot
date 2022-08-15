@@ -1,0 +1,27 @@
+{
+  "name": "test-actions",
+  "version": "1.0.0",
+  "description": "test-actions",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "dayjs": "^1.11.4",
+    "fs-extra": "^10.1.0",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZTrainWilliams/test-actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZTrainWilliams/test-actions/issues"
+  },
+  "homepage": "https://github.com/ZTrainWilliams/test-actions#readme"
+}
