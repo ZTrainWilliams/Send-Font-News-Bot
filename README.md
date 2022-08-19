@@ -2,6 +2,10 @@
 
 利用 Action 获取前端资讯文章，每日定时推送
 
+## 方式
+    利用[schedule](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule)设置时间段定时，
+    当前设置- cron: "59 23 * * *"，意思是UTC时间的第23个小时的第59分钟调用，实质上定时任务是会存在延迟的，可能服务器位置原因，毕竟免费资源
+
 ## 其他
 
 实现总结文章：
