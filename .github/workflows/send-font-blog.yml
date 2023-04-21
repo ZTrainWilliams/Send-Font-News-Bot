@@ -3,7 +3,7 @@ on:
   push:
   schedule:
     # 定时任务(UTC)
-    - cron: "59 23 * * *"
+    - cron: "30 0 * * *"
 
 env:
   FONT_WECOM_WEBHOOK_KEY: ${{ secrets.FONT_WECOM_WEBHOOK_KEY }}
