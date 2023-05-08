@@ -34,6 +34,8 @@ const adsKeyWords = [
   "秋招",
   "面经",
   "福利",
+  "offer",
+  "工资",
 ];
 const hasAds = (title) => {
   return adsKeyWords.some((text) => title.indexOf(text) !== -1);
@@ -101,7 +103,7 @@ async function handleBody(body) {
     });
 
     if (sendList.length > 0) {
-      sendNews(sendList.slice(0, 10));
+      sendNews(sendList.slice(0, 8));
       hadSendData = [...sendList];
       fs.writeJsonSync(hasBeenSent, hadSendData);
     }
