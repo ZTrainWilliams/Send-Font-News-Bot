@@ -36,6 +36,7 @@ const adsKeyWords = [
   "福利",
   "offer",
   "工资",
+  "薪水",
 ];
 const hasAds = (title) => {
   return adsKeyWords.some((text) => title.indexOf(text) !== -1);
