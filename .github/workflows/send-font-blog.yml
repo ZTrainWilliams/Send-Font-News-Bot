@@ -1,30 +1,30 @@
-name: 'Send Font News Bot'
-on:
-  push:
-  schedule:
-    # 定时任务(UTC)
-    - cron: "56 23 * * *"
+# name: 'Send Font News Bot'
+# on:
+#   push:
+#   schedule:
+#     # 定时任务(UTC)
+#     - cron: "56 23 * * *"
 
-env:
-  FONT_WECOM_WEBHOOK_KEY: ${{ secrets.FONT_WECOM_WEBHOOK_KEY }}
+# env:
+#   FONT_WECOM_WEBHOOK_KEY: ${{ secrets.FONT_WECOM_WEBHOOK_KEY }}
 
-jobs:
-  run-sendFontNews:
-    runs-on: ubuntu-latest
-    steps:
-      # 首先copy git仓库到虚拟机上
-      - name: 'Checkout codes'
-        uses: actions/checkout@v1
+# jobs:
+#   run-sendFontNews:
+#     runs-on: ubuntu-latest
+#     steps:
+#       # 首先copy git仓库到虚拟机上
+#       - name: 'Checkout codes'
+#         uses: actions/checkout@v1
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v1  #安装node.js
-        with:
-          node-version: '14'
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v1  #安装node.js
+#         with:
+#           node-version: '14'
           
-      - name: Install Dependency
-        run: |
-          npm install
-      - name: node font-news   
-        # 要运行的js脚本，放在根目录下
-        run: |
-          node ./font-news.js "${{secrets.FONT_WECOM_WEBHOOK_KEY}}"
+#       - name: Install Dependency
+#         run: |
+#           npm install
+#       - name: node font-news   
+#         # 要运行的js脚本，放在根目录下
+#         run: |
+#           node ./font-news.js "${{secrets.FONT_WECOM_WEBHOOK_KEY}}"
